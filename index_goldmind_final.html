@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GoldMind</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1a1a1a, #000000);
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      color: gold;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background-color: gold;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .feature-card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      box-shadow: 0 0 10px rgba(255,215,0,0.2);
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background-color: gold;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      padding: 20px;
+      background-color: black;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 768px) {
+      .features-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1 style="color: gold; font-size: 3rem;">GoldMind</h1>
+    <p class="tagline" style="color: orange; font-size: 1.2rem;">Think Gold, Grow Bold</p>
+  </header>
+
+  <section class="intro">
+    <h2>Welcome to GoldMind</h2>
+    <p>Your journey to brilliance starts here. Unlock your potential with GoldMind’s innovative ideas and powerful insights.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <h2>About GoldMind</h2>
+    <p style="max-width: 600px; margin: auto;">
+      GoldMind एक ऐसा प्लेटफॉर्म है जो आपकी सोच को सोने जैसी कीमती बनाता है। 
+      हमारा उद्देश्य है लोगों को उनके लक्ष्यों तक पहुँचाना, इनोवेशन और ब्रिलिएंस के माध्यम से।
+    </p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" style="background-color: #0d0d0d;">
+    <h2>What We Offer</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>🚀 Digital Learning</h3>
+        <p>Video Courses, Blogs और Tools जो आपको एक स्मार्ट दिमाग वाला इंसान बनाएँ।</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌟 Motivation Boost</h3>
+        <p>GoldMind आपको अंदर से मजबूत और बाहर से बोल्ड बनाने का प्लान रखता है।</p>
+      </div>
+      <div class="feature-card">
+        <h3>💡 Self Improvement</h3>
+        <p>हर दिन खुद को बेहतर बनाओ, नॉलेज और स्किल्स के साथ।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 GoldMind. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
