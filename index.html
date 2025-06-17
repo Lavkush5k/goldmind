@@ -1,138 +1,227 @@
-PK��Z������
+PK��Z������
 index.html<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GoldMind - Login</title>
-  <link rel="stylesheet" href="style.css">
+  <title>GoldMind</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>GoldMind</h1>
-    <p>Think Gold, Grow Bold</p>
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to <span>GoldMind</span></h1>
+      <p>Think Gold, Grow Bold</p>
+      <a href="login.html" class="btn">Login</a>
+      <a href="signup.html" class="btn btn-outline">Register</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <h2>Our Services</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>🚀 Digital Growth</h3>
+        <p>Accelerate your business with smart strategies.</p>
+      </div>
+      <div class="feature-card">
+        <h3>📈 Skill Development</h3>
+        <p>Learn new skills through courses and mentoring.</p>
+      </div>
+      <div class="feature-card">
+        <h3>🌍 Community</h3>
+        <p>Join like-minded people working to grow big.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 GoldMind. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+PK��ZzS�^��
+login.html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GoldMind Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-body">
+  <div class="auth-container">
+    <h2>Login to GoldMind</h2>
     <form action="dashboard.html" method="GET">
       <input type="email" placeholder="Email" required />
       <input type="password" placeholder="Password" required />
       <button type="submit">Login</button>
     </form>
-    <div class="links">
-      <a href="signup.html">Register</a> |
-      <a href="#">Forgot Password?</a>
-    </div>
+    <p class="auth-link"><a href="signup.html">Don't have an account? Register</a></p>
   </div>
 </body>
 </html>
-PK��Z-To���signup.html<!DOCTYPE html>
+PK��Z�z����signup.html<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GoldMind - Signup</title>
-  <link rel="stylesheet" href="style.css">
+  <title>GoldMind Signup</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="container">
-    <h1>Create Account</h1>
+<body class="auth-body">
+  <div class="auth-container">
+    <h2>Register on GoldMind</h2>
     <form action="dashboard.html" method="GET">
       <input type="text" placeholder="Full Name" required />
       <input type="email" placeholder="Email" required />
       <input type="password" placeholder="Password" required />
-      <button type="submit">Sign Up</button>
+      <button type="submit">Register</button>
     </form>
-    <div class="links">
-      <a href="index.html">Already have an account? Login</a>
-    </div>
+    <p class="auth-link"><a href="login.html">Already have an account? Login</a></p>
   </div>
 </body>
 </html>
-PK��Z��q��dashboard.html<!DOCTYPE html>
+PK��Zǻ���dashboard.html<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GoldMind - Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoldMind Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container">
-    <h1>Welcome to GoldMind Dashboard</h1>
-    <p>You have successfully logged in.</p>
-    <a href="index.html">Logout</a>
+<body class="dashboard-body">
+  <div class="dashboard-container">
+    <h1>Welcome to GoldMind</h1>
+    <p>This is your dashboard after login.</p>
+    <a href="index.html" class="btn">Logout</a>
   </div>
 </body>
 </html>
-PK��Z�gZZ	style.cssbody {
+PK��Z�y��	style.cssbody {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-  color: #fff;
+  background: #0e0e0e;
+  color: white;
+}
+.hero {
+  background: linear-gradient(to right, #1a1a1a, #000000);
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: gold;
+}
+.hero h1 span {
+  color: orange;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid gold;
+  color: gold;
+}
+.features {
+  padding: 60px 20px;
+  background: #111;
+  text-align: center;
+}
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: gold;
+}
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.feature-card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(255,215,0,0.1);
+}
+.footer {
+  padding: 20px;
+  background: black;
+  color: #aaa;
+  text-align: center;
+}
+.auth-body {
+  background: #0f0f0f;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
-.container {
-  background-color: #111;
+.auth-container {
+  background: #1c1c1c;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
-  width: 100%;
-  max-width: 400px;
   text-align: center;
+  box-shadow: 0 0 15px rgba(255,215,0,0.2);
 }
-
-.container h1 {
+.auth-container h2 {
   color: gold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-
-.container p {
-  color: orange;
-  margin-bottom: 30px;
-  font-size: 1rem;
-}
-
-.container input {
+.auth-container input {
+  display: block;
   width: 100%;
   padding: 12px;
   margin: 10px 0;
   border-radius: 8px;
   border: none;
-  background: #222;
+  background: #2a2a2a;
   color: white;
 }
-
-.container button {
-  width: 100%;
-  padding: 12px;
-  background-color: gold;
-  border: none;
-  border-radius: 8px;
+.auth-container button {
+  padding: 12px 20px;
+  background: gold;
   color: black;
   font-weight: bold;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s ease;
 }
-
-.container button:hover {
-  background-color: #e6c200;
-}
-
-.links {
+.auth-link {
   margin-top: 15px;
 }
-
-.links a {
+.auth-link a {
   color: #aaa;
   text-decoration: none;
-  font-size: 0.9rem;
 }
-
-.links a:hover {
-  text-decoration: underline;
+.dashboard-body {
+  background: #111;
+  color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-PK��Z������
-�index.htmlPK��Z-To�����signup.htmlPK��Z��q����dashboard.htmlPK��Z�gZZ	�{style.cssPK��
+.dashboard-container {
+  text-align: center;
+}
+PK��Z������
+�index.htmlPK��ZzS�^��
+��login.htmlPK��Z�z�����Zsignup.htmlPK��Zǻ����O
+dashboard.htmlPK��Z�y��	�7style.cssPKd
