@@ -1,105 +1,138 @@
-
-<!DOCTYPE html>
+PK��Z������
+index.html<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GoldMind - Login</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background: linear-gradient(to right, #0f0f0f, #1a1a1a);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .login-container {
-      background-color: #111;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .login-container h1 {
-      color: gold;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    .login-container p {
-      color: orange;
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 1rem;
-    }
-
-    .login-container input {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 8px;
-      border: none;
-      background: #222;
-      color: white;
-    }
-
-    .login-container button {
-      width: 100%;
-      padding: 12px;
-      background-color: gold;
-      border: none;
-      border-radius: 8px;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .login-container button:hover {
-      background-color: #e6c200;
-    }
-
-    .login-container .links {
-      text-align: center;
-      margin-top: 15px;
-    }
-
-    .login-container .links a {
-      color: #aaa;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 0.9rem;
-    }
-
-    .login-container .links a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="login-container">
+  <div class="container">
     <h1>GoldMind</h1>
     <p>Think Gold, Grow Bold</p>
-    <form>
+    <form action="dashboard.html" method="GET">
       <input type="email" placeholder="Email" required />
       <input type="password" placeholder="Password" required />
       <button type="submit">Login</button>
     </form>
     <div class="links">
-      <a href="#">Forgot Password?</a> |
-      <a href="#">Register</a>
+      <a href="signup.html">Register</a> |
+      <a href="#">Forgot Password?</a>
     </div>
   </div>
 </body>
 </html>
+PK��Z-To���signup.html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GoldMind - Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Account</h1>
+    <form action="dashboard.html" method="GET">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="links">
+      <a href="index.html">Already have an account? Login</a>
+    </div>
+  </div>
+</body>
+</html>
+PK��Z��q��dashboard.html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GoldMind - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to GoldMind Dashboard</h1>
+    <p>You have successfully logged in.</p>
+    <a href="index.html">Logout</a>
+  </div>
+</body>
+</html>
+PK��Z�gZZ	style.cssbody {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #111;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.container h1 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: orange;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+  background: #222;
+  color: white;
+}
+
+.container button {
+  width: 100%;
+  padding: 12px;
+  background-color: gold;
+  border: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #e6c200;
+}
+
+.links {
+  margin-top: 15px;
+}
+
+.links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+PK��Z������
+�index.htmlPK��Z-To�����signup.htmlPK��Z��q����dashboard.htmlPK��Z�gZZ	�{style.cssPK��
